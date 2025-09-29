@@ -1,0 +1,282 @@
+/* fonts */
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* shared styles */
+.body {
+    background-color: #f5f8ff;
+}
+
+ul {
+    list-style: none;
+}
+
+.all_description {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 13px;
+}
+
+.title-color {
+    color: #E95A08;
+
+}
+
+.all_title {
+    font-size: 4.1rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.pri-btn {
+    background-color: #E95A08;
+    padding: 18px 50px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 7px;
+    width: 100%;
+}
+
+/* navbar styles */
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.list-1 {
+    margin-right: 48px;
+}
+
+.home,
+.cart {
+    color: #252432;
+    font-size: 1.3rem;
+}
+
+.shop,
+.about {
+    color: #8987A1;
+    font-size: 1.3rem;
+}
+
+/* home page styles */
+.home-page {
+    display: flex;
+    justify-content: space-around;
+    gap: 180px;
+    margin-top: 226px;
+}
+
+
+.home-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+.home-content {
+    align-items: center;
+    align-content: center;
+}
+
+.home-desc {
+    margin-top: 13px;
+}
+
+.home-page-img {
+    width: 100%;
+}
+
+/* our plants */
+
+.plant-cnt {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cart-item-cnt {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.cart-item-cnt>img {
+    width: 100%;
+}
+
+.cart-flower {
+    font: size 1.3rem;
+    font-weight: 400;
+    margin-top: 30px;
+    ;
+}
+
+.cart-flower-price {
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Flower & Plants Lover  */
+.trusted_seller_ul {
+    list-style-type: disc;
+    text-align: left;
+}
+
+.trusted_seller_ul>li {
+    margin-top: 20px;
+}
+
+.trusted_seller {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.trust-pg-title {
+    text-align: left;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+.img-1 {
+    width: 100%;
+    height: auto;
+}
+
+.img-2 {
+    height: 286px;
+    width: 286px;
+    position: absolute;
+    top: -22%;
+    right: -22%;
+    z-index: 2;
+}
+
+/* latest deal */
+
+
+.deal-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* mobile responsive */
+@media screen and (max-width: 576px) {
+
+    /* shared style */
+    .all_title>br {
+        display: none;
+    }
+
+    .all_description>br {
+        display: none;
+    }
+
+    .all_description {
+        font-size: 0.85rem;
+    }
+
+    .all_title {
+        font-size: 1.5rem;
+    }
+
+
+    /* navbar resposive */
+    .list-1 {
+        display: none;
+    }
+
+    .nav-flex {
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+
+    /* home page responsive */
+    .home-page {
+        flex-direction: column-reverse;
+        gap: 24px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-title>br {
+        display: inline;
+    }
+
+    .home-content {
+        text-align: left;
+    }
+
+    /* cart items responsive */
+    .cart-item {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .cart-item-cnt>img {
+        width: 100%;
+
+    }
+
+    .pri-btn {
+        padding: 12px 35px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    /* Flower & Plants Lover  */
+    .trusted_seller {
+        flex-direction: column;
+        gap: 50px;
+        margin: 50px 20px;
+    }
+
+    .img-2 {
+        display: none;
+    }
+
+    .trust-pg-cnt {
+        text-align: left;
+    }
+}
