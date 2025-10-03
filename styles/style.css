@@ -196,6 +196,34 @@ ul {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* subscribe page */
+.subscribe-page {
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    margin: 0;
+}
+
+.subscribe-page-cnt {
+    text-align: center;
+}
+
+.subscribe-page-title {
+    color: #f5f8ff;
+    margin-bottom: 20px;
+}
+
+.subscribe-page-email {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
 /* mobile responsive */
 @media screen and (max-width: 576px) {
 
@@ -279,4 +307,12 @@ ul {
     .trust-pg-cnt {
         text-align: left;
     }
+
+    /* subscribe pg */
+    .subscribe-page-email {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: auto auto;
+}
 }
