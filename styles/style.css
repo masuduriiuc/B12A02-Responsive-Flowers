@@ -17,7 +17,7 @@
 }
 
 /* shared styles */
-.body {
+body {
     background-color: #f5f8ff;
 }
 
@@ -53,6 +53,14 @@ ul {
     width: 100%;
 }
 
+.shop,
+.about,
+.footer-menu {
+    color: #8987A1;
+    font-size: 1.3rem;
+}
+
+
 /* navbar styles */
 .nav-flex {
     display: flex;
@@ -73,11 +81,6 @@ ul {
     font-size: 1.3rem;
 }
 
-.shop,
-.about {
-    color: #8987A1;
-    font-size: 1.3rem;
-}
 
 /* home page styles */
 .home-page {
@@ -203,9 +206,9 @@ ul {
     background-size: cover;
     width: 100%;
     height: 50vh;
-    display: flex;               
-    justify-content: center;     
-    align-items: center;         
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
 }
 
@@ -222,6 +225,33 @@ ul {
     width: 100%;
     display: grid;
     grid-template-columns: 4fr 1fr;
+}
+
+/* footer related styles */
+footer {
+    margin: 70px 150px;
+    width: 100%;
+    display: flex;
+    gap: 200px;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 200px;
+}
+
+.footer-menu-item {
+    margin-top: 32px;
+}
+
+.footer-img {
+    margin-left: 24px;
+}
+
+.footer-social{
+    display: flex;
+    gap: 24px;
+    align-items: start;
 }
 
 /* mobile responsive */
@@ -245,7 +275,7 @@ ul {
     }
 
 
-    /* navbar resposive */
+    /* navbar responsive */
     .list-1 {
         display: none;
     }
@@ -310,9 +340,52 @@ ul {
 
     /* subscribe pg */
     .subscribe-page-email {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    margin: auto auto;
-}
+        width: 80%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin: auto auto;
+    }
+
+    /* footer responsive */
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-logo {
+        text-align: left;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .footer-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .footer-menu-item {
+        margin-top: 8px;
+        text-align: left;
+    }
+
+    .footer-img {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .footer-social{
+        flex-direction: row;
+        margin-top: 10px;
+    }
 }
