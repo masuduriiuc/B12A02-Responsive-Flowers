@@ -403,7 +403,8 @@ footer {
     .trusted_seller {
         flex-direction: column;
         gap: 50px;
-        margin: 50px 20px;
+        margin: 50px 0px;
+        align-items: flex-start;
     }
 
     .img-2 {
